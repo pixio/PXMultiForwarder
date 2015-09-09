@@ -1,0 +1,6 @@
+framework module Pods_PXMultiForwarder_Example {
+  umbrella header "Pods-PXMultiForwarder_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
