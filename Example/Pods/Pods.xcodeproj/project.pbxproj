@@ -8,75 +8,75 @@
 
 /* Begin PBXBuildFile section */
 		01EED1EA589048838B7C3EFD0EF91ED9 /* Pods-PXMultiForwarder_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A167EA375F7A93EB8E703E31DA96DD /* Pods-PXMultiForwarder_Example-dummy.m */; };
-		179EFCD10A7D9BA29033B6BAD6613F3B /* PXMultiForwarder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F197DC43E320E36327D71F7D56C67E75 /* PXMultiForwarder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		19834CE283DF523950F71A3E16787933 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E637A7604D2B8D8DC946162E2969EF6A /* Foundation.framework */; };
-		29AEDE2CBF7D394D543CCEA202798A2C /* PXMultiForwarder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0411D4C0AF7FB25457A5F9A813B414E /* PXMultiForwarder-dummy.m */; };
-		5FA7A65CDFF211FD1457DD06AC10551C /* PXMultiForwarder.h in Headers */ = {isa = PBXBuildFile; fileRef = 830A7215AB69A5EC13D35F6FA9E9F995 /* PXMultiForwarder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		63D474F340E10163BD61FCF7FFDBB284 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E637A7604D2B8D8DC946162E2969EF6A /* Foundation.framework */; };
-		BF0CF8520FBFC1CE163879DCFDC608F3 /* PXMultiForwarder.m in Sources */ = {isa = PBXBuildFile; fileRef = 156A1BB95BDF8C54A2EF6330F8318B94 /* PXMultiForwarder.m */; };
-		C230BFE34B723371118EAB44D22F7E6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E637A7604D2B8D8DC946162E2969EF6A /* Foundation.framework */; };
+		05A42B8F030B002DC8AD566E44B2E5D0 /* PXMultiForwarder.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D415D1A4192F178AD034B1E0E63724 /* PXMultiForwarder.m */; };
+		19834CE283DF523950F71A3E16787933 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 422F3EC7A6EAC073ED8FD6FC69A72B44 /* Foundation.framework */; };
+		4882E0DC13EE32A2F24029E02F4620D0 /* PXMultiForwarder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A472AC43D9A2F15A3C0B5DF6D47B16D /* PXMultiForwarder-dummy.m */; };
+		495A34E3F11C1CEE8508FC8C05345652 /* PXMultiForwarder.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 26BCC408633ADCCFB67B53392A5028A3 /* PXMultiForwarder.bundle */; };
+		5EDB05991B1684378BF862E28B4379D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 422F3EC7A6EAC073ED8FD6FC69A72B44 /* Foundation.framework */; };
+		6731F6E29BB38CB47F8917699A703547 /* PXMultiForwarder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F3FE00F606CD6F3BBD4B86D5BBDF6A2 /* PXMultiForwarder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86D6E43CAB138E5404006F9F119345C0 /* PXMultiForwarder.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF2A7397AAEC1C4070A57B33FB2FFC2 /* PXMultiForwarder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C230BFE34B723371118EAB44D22F7E6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 422F3EC7A6EAC073ED8FD6FC69A72B44 /* Foundation.framework */; };
 		C8A4A31D67E62F98B1C83AC63E1544A0 /* Pods-PXMultiForwarder_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6557FB353A916D4CBF5766FCDBD944AA /* Pods-PXMultiForwarder_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CF08AF7923A2CD9F998121D87F62392F /* Pods-PXMultiForwarder_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E728E23D40E2514F01A10FF5ADE866 /* Pods-PXMultiForwarder_Tests-dummy.m */; };
-		DE9F86AC508BCFBD92A9056B4C6D1494 /* PXMultiForwarder.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 791AC32E4E7CAA8B1E1D5647C802C244 /* PXMultiForwarder.bundle */; };
 		F282C6D9FE95A53F55ED10C2ABB7FF51 /* Pods-PXMultiForwarder_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DC6BBAC215574313C7DD0B6CEA07A96 /* Pods-PXMultiForwarder_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		026CCC9028176FA37E03BBDB1173375E /* PBXContainerItemProxy */ = {
+		690F31298417B29C742A54DD39D60737 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D9B0B26F779FC45D5BC3DCC40EA36AC8;
+			remoteGlobalIDString = 84EE2107484606E51781EE351CD61688;
 			remoteInfo = PXMultiForwarder;
 		};
-		7EC6F698FF689041120F225051781041 /* PBXContainerItemProxy */ = {
+		8F0E345EBEC3B877C568C22E578BE1C0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5B807DAFF330C8D28903FDDC812D2076;
+			remoteGlobalIDString = 84EE2107484606E51781EE351CD61688;
+			remoteInfo = PXMultiForwarder;
+		};
+		DF81BE2024A5807EC8D4330A7E3E3EC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDC47C5E4C7D004F36D62B27EDBE47F5;
 			remoteInfo = "PXMultiForwarder-PXMultiForwarder";
-		};
-		F52DE7528E775F6A8FA6CD5E9EF05EBC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D9B0B26F779FC45D5BC3DCC40EA36AC8;
-			remoteInfo = PXMultiForwarder;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0900A58267F1CA91B1A5BC3D1AA22F0E /* PXMultiForwarder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PXMultiForwarder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A88CC7190564AE96527C46ABA1C7931 /* Pods-PXMultiForwarder_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PXMultiForwarder_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		136787820FB45A130F07961CDC908A82 /* PXMultiForwarder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PXMultiForwarder-prefix.pch"; sourceTree = "<group>"; };
-		156A1BB95BDF8C54A2EF6330F8318B94 /* PXMultiForwarder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PXMultiForwarder.m; sourceTree = "<group>"; };
 		17099BEB280C3352C83066787F7C1B91 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2231AE320398D69B61AF74821B646CC3 /* Pods_PXMultiForwarder_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PXMultiForwarder_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		253439741CBB5F6241EE06F06C2DA369 /* Pods-PXMultiForwarder_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PXMultiForwarder_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		26BCC408633ADCCFB67B53392A5028A3 /* PXMultiForwarder.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PXMultiForwarder.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		29D415D1A4192F178AD034B1E0E63724 /* PXMultiForwarder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PXMultiForwarder.m; sourceTree = "<group>"; };
+		3A472AC43D9A2F15A3C0B5DF6D47B16D /* PXMultiForwarder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PXMultiForwarder-dummy.m"; sourceTree = "<group>"; };
+		3AF2A7397AAEC1C4070A57B33FB2FFC2 /* PXMultiForwarder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PXMultiForwarder.h; sourceTree = "<group>"; };
+		3F3FE00F606CD6F3BBD4B86D5BBDF6A2 /* PXMultiForwarder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PXMultiForwarder-umbrella.h"; sourceTree = "<group>"; };
 		41D1AC91097CAA6E09527678A45E9215 /* PXMultiForwarder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PXMultiForwarder.modulemap; sourceTree = "<group>"; };
+		422F3EC7A6EAC073ED8FD6FC69A72B44 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		43FFC745E2F4CC669C1D9D1877B04C21 /* Pods-PXMultiForwarder_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PXMultiForwarder_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		49FF27DF5C15EDE2D34C039E8AFF06C5 /* Pods-PXMultiForwarder_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PXMultiForwarder_Tests.modulemap"; sourceTree = "<group>"; };
 		4E5E1B7E5F027DE8C2381AB00303A338 /* Pods-PXMultiForwarder_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PXMultiForwarder_Tests-resources.sh"; sourceTree = "<group>"; };
 		596D5A70E8103F3EE9CFF3495BCB600A /* Pods-PXMultiForwarder_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PXMultiForwarder_Example.modulemap"; sourceTree = "<group>"; };
 		6557FB353A916D4CBF5766FCDBD944AA /* Pods-PXMultiForwarder_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PXMultiForwarder_Tests-umbrella.h"; sourceTree = "<group>"; };
+		658D1CA097A86ED78AAE7EAE8A5F0454 /* PXMultiForwarder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PXMultiForwarder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E567DA2A189C73B3C6FF2A3690A2AD1 /* Pods-PXMultiForwarder_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PXMultiForwarder_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		75D4E6F5AEFEFE6A9B2EBF56BA838367 /* Pods-PXMultiForwarder_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PXMultiForwarder_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		786C93341068B71B891BB6BBF2800731 /* PXMultiForwarder.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PXMultiForwarder.xcconfig; sourceTree = "<group>"; };
-		791AC32E4E7CAA8B1E1D5647C802C244 /* PXMultiForwarder.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PXMultiForwarder.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DC6BBAC215574313C7DD0B6CEA07A96 /* Pods-PXMultiForwarder_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PXMultiForwarder_Example-umbrella.h"; sourceTree = "<group>"; };
 		82A167EA375F7A93EB8E703E31DA96DD /* Pods-PXMultiForwarder_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PXMultiForwarder_Example-dummy.m"; sourceTree = "<group>"; };
-		830A7215AB69A5EC13D35F6FA9E9F995 /* PXMultiForwarder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PXMultiForwarder.h; sourceTree = "<group>"; };
 		9F9EC05C34267632BB1EC0052951CA28 /* Pods_PXMultiForwarder_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PXMultiForwarder_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BBC3D9E6E22E4B900C724D63D5F52197 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C0411D4C0AF7FB25457A5F9A813B414E /* PXMultiForwarder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PXMultiForwarder-dummy.m"; sourceTree = "<group>"; };
+		BDBB725EACAC1A132F34B5215B2188EB /* PXMultiForwarder-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "PXMultiForwarder-Private.xcconfig"; sourceTree = "<group>"; };
 		C8E728E23D40E2514F01A10FF5ADE866 /* Pods-PXMultiForwarder_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PXMultiForwarder_Tests-dummy.m"; sourceTree = "<group>"; };
 		D06F687134B793AD5FA0987BD6BE6284 /* Pods-PXMultiForwarder_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PXMultiForwarder_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D4F057E639E425E7BECE36955FBF54EF /* Pods-PXMultiForwarder_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PXMultiForwarder_Example-resources.sh"; sourceTree = "<group>"; };
-		E637A7604D2B8D8DC946162E2969EF6A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		E98830FFB0124C378755B7624BABB2ED /* PXMultiForwarder-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "PXMultiForwarder-Private.xcconfig"; sourceTree = "<group>"; };
 		EF0053F380F683D58E075676823BBD84 /* Pods-PXMultiForwarder_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PXMultiForwarder_Example-frameworks.sh"; sourceTree = "<group>"; };
-		F197DC43E320E36327D71F7D56C67E75 /* PXMultiForwarder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PXMultiForwarder-umbrella.h"; sourceTree = "<group>"; };
 		F1CA3598D9685B9E03095CDC96A88DD6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4446F802D7AF1BDBFDCA4F8345A550E /* Pods-PXMultiForwarder_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PXMultiForwarder_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F6F83474AF23F149AF865AC94ACE3ECC /* Pods-PXMultiForwarder_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PXMultiForwarder_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -84,13 +84,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		249CD2CF4AB9BF7FDEF011B097B5CCDF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5EB40A95F5286F07D744AB28112B0653 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -99,11 +92,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C790EC7FAD439C3784CE12DBE2D05AAC /* Frameworks */ = {
+		AECD7ED0FC19F0FC5B72C72F49DA47E6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63D474F340E10163BD61FCF7FFDBB284 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D96DD7BB83078ACA24CF3D9A6E0DE17F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EDB05991B1684378BF862E28B4379D8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +140,7 @@
 		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				E637A7604D2B8D8DC946162E2969EF6A /* Foundation.framework */,
+				422F3EC7A6EAC073ED8FD6FC69A72B44 /* Foundation.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -170,10 +170,10 @@
 				BBC3D9E6E22E4B900C724D63D5F52197 /* Info.plist */,
 				41D1AC91097CAA6E09527678A45E9215 /* PXMultiForwarder.modulemap */,
 				786C93341068B71B891BB6BBF2800731 /* PXMultiForwarder.xcconfig */,
-				E98830FFB0124C378755B7624BABB2ED /* PXMultiForwarder-Private.xcconfig */,
-				C0411D4C0AF7FB25457A5F9A813B414E /* PXMultiForwarder-dummy.m */,
+				BDBB725EACAC1A132F34B5215B2188EB /* PXMultiForwarder-Private.xcconfig */,
+				3A472AC43D9A2F15A3C0B5DF6D47B16D /* PXMultiForwarder-dummy.m */,
 				136787820FB45A130F07961CDC908A82 /* PXMultiForwarder-prefix.pch */,
-				F197DC43E320E36327D71F7D56C67E75 /* PXMultiForwarder-umbrella.h */,
+				3F3FE00F606CD6F3BBD4B86D5BBDF6A2 /* PXMultiForwarder-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/PXMultiForwarder";
@@ -234,8 +234,8 @@
 		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				791AC32E4E7CAA8B1E1D5647C802C244 /* PXMultiForwarder.bundle */,
-				0900A58267F1CA91B1A5BC3D1AA22F0E /* PXMultiForwarder.framework */,
+				26BCC408633ADCCFB67B53392A5028A3 /* PXMultiForwarder.bundle */,
+				658D1CA097A86ED78AAE7EAE8A5F0454 /* PXMultiForwarder.framework */,
 				9F9EC05C34267632BB1EC0052951CA28 /* Pods_PXMultiForwarder_Example.framework */,
 				2231AE320398D69B61AF74821B646CC3 /* Pods_PXMultiForwarder_Tests.framework */,
 			);
@@ -245,8 +245,8 @@
 		E6D3EC9A56F93C0E5A10C7C76DDD5B1E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				830A7215AB69A5EC13D35F6FA9E9F995 /* PXMultiForwarder.h */,
-				156A1BB95BDF8C54A2EF6330F8318B94 /* PXMultiForwarder.m */,
+				3AF2A7397AAEC1C4070A57B33FB2FFC2 /* PXMultiForwarder.h */,
+				29D415D1A4192F178AD034B1E0E63724 /* PXMultiForwarder.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -262,12 +262,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A3E573EBC827C92743027F1BE5BF32C9 /* Headers */ = {
+		BF33FECF1E6EE3793F2E61F6B87D4753 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				179EFCD10A7D9BA29033B6BAD6613F3B /* PXMultiForwarder-umbrella.h in Headers */,
-				5FA7A65CDFF211FD1457DD06AC10551C /* PXMultiForwarder.h in Headers */,
+				6731F6E29BB38CB47F8917699A703547 /* PXMultiForwarder-umbrella.h in Headers */,
+				86D6E43CAB138E5404006F9F119345C0 /* PXMultiForwarder.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,22 +282,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5B807DAFF330C8D28903FDDC812D2076 /* PXMultiForwarder-PXMultiForwarder */ = {
+		84EE2107484606E51781EE351CD61688 /* PXMultiForwarder */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 63EEE69F645D4B49AF0091FD4FD686FA /* Build configuration list for PBXNativeTarget "PXMultiForwarder-PXMultiForwarder" */;
+			buildConfigurationList = DE7419EA46E4132E32868A76CA9AFFAA /* Build configuration list for PBXNativeTarget "PXMultiForwarder" */;
 			buildPhases = (
-				EB07172CE0F6BFE85F805B1148F2B28C /* Sources */,
-				249CD2CF4AB9BF7FDEF011B097B5CCDF /* Frameworks */,
-				9F65D3B31D8876B7BC7BE43F737C9E4D /* Resources */,
+				3A008F2C572AC8A9A78F3FDA2AD56C97 /* Sources */,
+				D96DD7BB83078ACA24CF3D9A6E0DE17F /* Frameworks */,
+				502CE09181328EE4AFDC5E461C365943 /* Resources */,
+				BF33FECF1E6EE3793F2E61F6B87D4753 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DCFB1AB2B862B20C8C83902938C2F547 /* PBXTargetDependency */,
 			);
-			name = "PXMultiForwarder-PXMultiForwarder";
-			productName = "PXMultiForwarder-PXMultiForwarder";
-			productReference = 791AC32E4E7CAA8B1E1D5647C802C244 /* PXMultiForwarder.bundle */;
-			productType = "com.apple.product-type.bundle";
+			name = PXMultiForwarder;
+			productName = PXMultiForwarder;
+			productReference = 658D1CA097A86ED78AAE7EAE8A5F0454 /* PXMultiForwarder.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 		988625EDECC348C5458F0ADA55065220 /* Pods-PXMultiForwarder_Example */ = {
 			isa = PBXNativeTarget;
@@ -310,31 +312,29 @@
 			buildRules = (
 			);
 			dependencies = (
-				868857B09E22D8445A9DD217E9A9A04E /* PBXTargetDependency */,
+				6DBAD50F7F04E225161538A2E1C57F86 /* PBXTargetDependency */,
 			);
 			name = "Pods-PXMultiForwarder_Example";
 			productName = "Pods-PXMultiForwarder_Example";
 			productReference = 9F9EC05C34267632BB1EC0052951CA28 /* Pods_PXMultiForwarder_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D9B0B26F779FC45D5BC3DCC40EA36AC8 /* PXMultiForwarder */ = {
+		BDC47C5E4C7D004F36D62B27EDBE47F5 /* PXMultiForwarder-PXMultiForwarder */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 10765B63B3815078E4E1C01BC96F2A21 /* Build configuration list for PBXNativeTarget "PXMultiForwarder" */;
+			buildConfigurationList = FD4070A89949535268201825A4BEE1BD /* Build configuration list for PBXNativeTarget "PXMultiForwarder-PXMultiForwarder" */;
 			buildPhases = (
-				DC1E3ECC6208ACD6A5180A6647EEFC0F /* Sources */,
-				C790EC7FAD439C3784CE12DBE2D05AAC /* Frameworks */,
-				36443653EDA5BA79F7F431905E2A4631 /* Resources */,
-				A3E573EBC827C92743027F1BE5BF32C9 /* Headers */,
+				D2303B00872B15A8E3E760436A1D6AE2 /* Sources */,
+				AECD7ED0FC19F0FC5B72C72F49DA47E6 /* Frameworks */,
+				1D5D86BE6E987EB9804A45448227153F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				55004E4E9AAA0FE1F492C802C08B27D4 /* PBXTargetDependency */,
 			);
-			name = PXMultiForwarder;
-			productName = PXMultiForwarder;
-			productReference = 0900A58267F1CA91B1A5BC3D1AA22F0E /* PXMultiForwarder.framework */;
-			productType = "com.apple.product-type.framework";
+			name = "PXMultiForwarder-PXMultiForwarder";
+			productName = "PXMultiForwarder-PXMultiForwarder";
+			productReference = 26BCC408633ADCCFB67B53392A5028A3 /* PXMultiForwarder.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 		EDC5160950B697D94BE87A1840DF6C88 /* Pods-PXMultiForwarder_Tests */ = {
 			isa = PBXNativeTarget;
@@ -347,7 +347,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				7938CBF7C9FECF8DF9BC87FF5E8B4C4D /* PBXTargetDependency */,
+				48B4C9EB5C1AB9B99A4122C56F8259AA /* PBXTargetDependency */,
 			);
 			name = "Pods-PXMultiForwarder_Tests";
 			productName = "Pods-PXMultiForwarder_Tests";
@@ -375,8 +375,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D9B0B26F779FC45D5BC3DCC40EA36AC8 /* PXMultiForwarder */,
-				5B807DAFF330C8D28903FDDC812D2076 /* PXMultiForwarder-PXMultiForwarder */,
+				84EE2107484606E51781EE351CD61688 /* PXMultiForwarder */,
+				BDC47C5E4C7D004F36D62B27EDBE47F5 /* PXMultiForwarder-PXMultiForwarder */,
 				988625EDECC348C5458F0ADA55065220 /* Pods-PXMultiForwarder_Example */,
 				EDC5160950B697D94BE87A1840DF6C88 /* Pods-PXMultiForwarder_Tests */,
 			);
@@ -384,24 +384,33 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		36443653EDA5BA79F7F431905E2A4631 /* Resources */ = {
+		1D5D86BE6E987EB9804A45448227153F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE9F86AC508BCFBD92A9056B4C6D1494 /* PXMultiForwarder.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9F65D3B31D8876B7BC7BE43F737C9E4D /* Resources */ = {
+		502CE09181328EE4AFDC5E461C365943 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				495A34E3F11C1CEE8508FC8C05345652 /* PXMultiForwarder.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3A008F2C572AC8A9A78F3FDA2AD56C97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4882E0DC13EE32A2F24029E02F4620D0 /* PXMultiForwarder-dummy.m in Sources */,
+				05A42B8F030B002DC8AD566E44B2E5D0 /* PXMultiForwarder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		637DFC5980563330714D8B308E06EB56 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -418,16 +427,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC1E3ECC6208ACD6A5180A6647EEFC0F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				29AEDE2CBF7D394D543CCEA202798A2C /* PXMultiForwarder-dummy.m in Sources */,
-				BF0CF8520FBFC1CE163879DCFDC608F3 /* PXMultiForwarder.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EB07172CE0F6BFE85F805B1148F2B28C /* Sources */ = {
+		D2303B00872B15A8E3E760436A1D6AE2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -437,23 +437,23 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		55004E4E9AAA0FE1F492C802C08B27D4 /* PBXTargetDependency */ = {
+		48B4C9EB5C1AB9B99A4122C56F8259AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PXMultiForwarder;
+			target = 84EE2107484606E51781EE351CD61688 /* PXMultiForwarder */;
+			targetProxy = 690F31298417B29C742A54DD39D60737 /* PBXContainerItemProxy */;
+		};
+		6DBAD50F7F04E225161538A2E1C57F86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PXMultiForwarder;
+			target = 84EE2107484606E51781EE351CD61688 /* PXMultiForwarder */;
+			targetProxy = 8F0E345EBEC3B877C568C22E578BE1C0 /* PBXContainerItemProxy */;
+		};
+		DCFB1AB2B862B20C8C83902938C2F547 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "PXMultiForwarder-PXMultiForwarder";
-			target = 5B807DAFF330C8D28903FDDC812D2076 /* PXMultiForwarder-PXMultiForwarder */;
-			targetProxy = 7EC6F698FF689041120F225051781041 /* PBXContainerItemProxy */;
-		};
-		7938CBF7C9FECF8DF9BC87FF5E8B4C4D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = PXMultiForwarder;
-			target = D9B0B26F779FC45D5BC3DCC40EA36AC8 /* PXMultiForwarder */;
-			targetProxy = 026CCC9028176FA37E03BBDB1173375E /* PBXContainerItemProxy */;
-		};
-		868857B09E22D8445A9DD217E9A9A04E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = PXMultiForwarder;
-			target = D9B0B26F779FC45D5BC3DCC40EA36AC8 /* PXMultiForwarder */;
-			targetProxy = F52DE7528E775F6A8FA6CD5E9EF05EBC /* PBXContainerItemProxy */;
+			target = BDC47C5E4C7D004F36D62B27EDBE47F5 /* PXMultiForwarder-PXMultiForwarder */;
+			targetProxy = DF81BE2024A5807EC8D4330A7E3E3EC0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -560,9 +560,21 @@
 			};
 			name = Release;
 		};
-		33CF526B5124BCF83C3D37F93689B7B8 /* Release */ = {
+		5314F9B378DB39A7FA5ED02C8133C09A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E98830FFB0124C378755B7624BABB2ED /* PXMultiForwarder-Private.xcconfig */;
+			baseConfigurationReference = BDBB725EACAC1A132F34B5215B2188EB /* PXMultiForwarder-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = PXMultiForwarder;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		5997BAD2B89D4D5D875A03B41E3B741E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDBB725EACAC1A132F34B5215B2188EB /* PXMultiForwarder-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 0.1.0;
@@ -577,7 +589,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/PXMultiForwarder/PXMultiForwarder.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = PXMultiForwarder;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -585,31 +597,7 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
-		};
-		3986DE2B6F87E1F6A4F948D003DE3B87 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E98830FFB0124C378755B7624BABB2ED /* PXMultiForwarder-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = PXMultiForwarder;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
 			name = Debug;
-		};
-		8A9F9124CA30843E71D963EB89962795 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E98830FFB0124C378755B7624BABB2ED /* PXMultiForwarder-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = PXMultiForwarder;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
 		};
 		8FA56CE441646368674588DE9F1BE07E /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -669,9 +657,9 @@
 			};
 			name = Debug;
 		};
-		B4DBDB8A5FC07E0B7424944C1BCD5A9C /* Debug */ = {
+		9D8BCC3A3BBBF632AA71788B4848F01C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E98830FFB0124C378755B7624BABB2ED /* PXMultiForwarder-Private.xcconfig */;
+			baseConfigurationReference = BDBB725EACAC1A132F34B5215B2188EB /* PXMultiForwarder-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 0.1.0;
@@ -686,13 +674,25 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/PXMultiForwarder/PXMultiForwarder.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = PXMultiForwarder;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ADFDD898EB8B20818AFD9C8998D78E46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDBB725EACAC1A132F34B5215B2188EB /* PXMultiForwarder-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = PXMultiForwarder;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
@@ -728,15 +728,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		10765B63B3815078E4E1C01BC96F2A21 /* Build configuration list for PBXNativeTarget "PXMultiForwarder" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B4DBDB8A5FC07E0B7424944C1BCD5A9C /* Debug */,
-				33CF526B5124BCF83C3D37F93689B7B8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -755,20 +746,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		63EEE69F645D4B49AF0091FD4FD686FA /* Build configuration list for PBXNativeTarget "PXMultiForwarder-PXMultiForwarder" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3986DE2B6F87E1F6A4F948D003DE3B87 /* Debug */,
-				8A9F9124CA30843E71D963EB89962795 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		BF3707BAD9A4CA65D4904F72BCA81651 /* Build configuration list for PBXNativeTarget "Pods-PXMultiForwarder_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				90B56621D785B308F8367AC84D322163 /* Debug */,
 				191A4A4193AE22BDC76FB7EB1F688762 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE7419EA46E4132E32868A76CA9AFFAA /* Build configuration list for PBXNativeTarget "PXMultiForwarder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5997BAD2B89D4D5D875A03B41E3B741E /* Debug */,
+				9D8BCC3A3BBBF632AA71788B4848F01C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD4070A89949535268201825A4BEE1BD /* Build configuration list for PBXNativeTarget "PXMultiForwarder-PXMultiForwarder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADFDD898EB8B20818AFD9C8998D78E46 /* Debug */,
+				5314F9B378DB39A7FA5ED02C8133C09A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

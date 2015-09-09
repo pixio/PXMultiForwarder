@@ -8,10 +8,22 @@
 
 #import "PXAppDelegate.h"
 
+#import "PXViewController.h"
+
 @implementation PXAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    CGRect screenBounds = [[UIScreen mainScreen] bounds];
+    UIWindow* theWindow = [[UIWindow alloc] initWithFrame:screenBounds];
+
+    PXViewController* vc = [[PXViewController alloc] init];
+    [theWindow setRootViewController:vc];
+
+    [theWindow makeKeyAndVisible];
+
+    [self setWindow:theWindow];
+
     // Override point for customization after application launch.
     return YES;
 }

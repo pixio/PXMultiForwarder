@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9725B8E325F7ABE697364ED3"
+               BlueprintIdentifier = "C01B4B537E5466FB03BE4750"
                BuildableName = "PXMultiForwarder.framework"
                BlueprintName = "PXMultiForwarder"
                ReferencedContainer = "container:Pods.xcodeproj">

@@ -57,19 +57,20 @@
  ***********************
  * Every method call you make on PXMultiForwarder gets forwarded to all of the objects it wraps (with a few exceptions, noted below).
  * However, the value returned from the method call depends on the return type of the original method.
- * If the original method returns an object or class object, the results are collected into an PXMultiForwarder, which is the return value.
+ * If the original method returns an Objective-C object or Class, the results are collected into an PXMultiForwarder, which is the return value.
  * However, if the original method returns any other type (including void), the return value is the return value of the LAST wrapped object.
  *
  * SOME methods are not forwarded. Specifically, any method implemented by this class, including NSProxy methods
- * (e.g. alloc, dealloc, description, any method in the NSObject protocol) is called directly on the
+ * (e.g. dealloc, description, finalize, any method in the NSObject protocol) is called directly on the
  * PXMultiForwarder and handled in the typical fashion. However, some of these methods (see the bottom of this file)
  * are overridden to forward instead of being handled normally.
  */
 @interface PXMultiForwarder : NSProxy
 
-- (instancetype) initWithObjects:(id)firstObject, ...;
+- (instancetype) initWithObjects:(id)firstObject, ... NS_REQUIRES_NIL_TERMINATION;
 - (instancetype) initWithArrayOfObjects:(NSArray*)objects;
 
+/** Returns the objects wrapped by this forwarder. */
 @property (readonly) NSArray* wrappedObjects;
 
 #pragma mark NSProxy methods overridden to forward

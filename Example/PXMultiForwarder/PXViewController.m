@@ -8,22 +8,34 @@
 
 #import "PXViewController.h"
 
-@interface PXViewController ()
-
-@end
+#import "PXTopView.h"
+#import "PXSmallView.h"
+#import <PXMultiForwarder/PXMultiForwarder.h>
 
 @implementation PXViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+#pragma mark UIView Methods
+- (void) loadView {
+    [self setView:[[PXTopView alloc] init]];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void) viewDidLoad {
+    [super viewDidLoad];
+    [[[self allViews] button] addTarget:self action:@selector(buttonPushed:) forControlEvents:UIControlEventTouchUpInside];
+}
+
+#pragma mark PXViewController Methods
+- (PXTopView*) pxView {
+    return (PXTopView*)[self view];
+}
+
+- (PXSmallView*) allViews {
+    PXTopView* theView = [self pxView];
+    return (PXSmallView*)[[PXMultiForwarder alloc] initWithObjects:[theView topView], [theView middleView], [theView bottomView], nil];
+}
+
+- (void) buttonPushed:(UIButton*)button {
+    [[self allViews] makeRandomColor];
 }
 
 @end

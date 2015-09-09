@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  PXMultiForwarder: 77722092d61bb68c6629fde09500d5bd117ca7d5
+  PXMultiForwarder: b8949d3571cad253ca4f849cbb6f63ff61f3055d
 
 COCOAPODS: 0.38.2
