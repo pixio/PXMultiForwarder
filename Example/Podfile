@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'PXMultiForwarder_Example', :exclusive => true do
+  pod "PXMultiForwarder", :path => "../"
+end
+
+target 'PXMultiForwarder_Tests', :exclusive => true do
+  pod "PXMultiForwarder", :path => "../"
+
+  
+end
