@@ -103,6 +103,11 @@ static NSMethodSignature* makeSignatureForSignature(NSMethodSignature* sig) {
     return self;
 }
 
+- (void) dealloc {
+    [super dealloc];
+    [_wrappedObjects release];
+}
+
 - (NSMethodSignature*) methodSignatureForSelector:(SEL)sel {
     id firstObject = [_wrappedObjects objectAtIndex:0];
     NSMethodSignature* sig = [firstObject methodSignatureForSelector:sel];
