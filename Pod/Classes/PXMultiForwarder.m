@@ -8,6 +8,40 @@
 
 #import "PXMultiForwarder.h"
 
+static BOOL isSelectorOwning(SEL sel) {
+    // http://clang.llvm.org/docs/AutomaticReferenceCounting.html#method-families
+    static const char* strings[5] = {"alloc", "copy", "mutableCopy", "new", "init"};
+    static int lengths[5] = {5, 4, 11, 3, 4};
+
+    NSString* name = NSStringFromSelector(sel);
+    NSUInteger cLength = [name lengthOfBytesUsingEncoding:NSUTF8StringEncoding];
+    const char* cName = [name UTF8String];
+    
+    // Skip leading underscores
+    while (*cName == '_') {
+        cName++;
+        cLength--;
+    }
+    
+    for (int i = 0; i < 5; i++) {
+        if (cLength < lengths[i])
+            continue;
+        
+        int result = memcmp(cName, strings[i], lengths[i]);
+        if (result != 0)
+            continue;
+        
+        if (cLength == lengths[i])
+            return TRUE;
+        
+        char after = cName[lengths[i]];
+        bool islowercaseAlpha = (after >= 'a') && (after <= 'z');
+        if (!islowercaseAlpha)
+            return TRUE;
+    }
+    
+    return FALSE;
+}
 static BOOL shouldCollect(NSMethodSignature* sig) {
     const char* const objEncoding = @encode(NSObject*);
     const char* const classEncoding = @encode(typeof([NSObject class]));
@@ -22,12 +56,12 @@ static BOOL needToChange(NSMethodSignature* sig) {
     return strcmp(classEncoding, [sig methodReturnType]) == 0;
 }
 
-static NSMethodSignature* newSignatureForSignature(NSMethodSignature* sig) {
+static NSMethodSignature* makeSignatureForSignature(NSMethodSignature* sig) {
     if (!needToChange(sig)) {
         return sig;
     }
 
-    NSMutableData* encodingString = [[NSMutableData alloc] init];
+    NSMutableData* encodingString = [NSMutableData data];
     void (^appendCString)(const char*) = ^(const char* data) {
         [encodingString appendBytes:data length:strlen(data)];
     };
@@ -50,7 +84,7 @@ static NSMethodSignature* newSignatureForSignature(NSMethodSignature* sig) {
 @implementation PXMultiForwarder
 
 - (instancetype) initWithObjects:(id)firstObject, ... {
-    NSMutableArray* objects = [[NSMutableArray alloc] init];
+    NSMutableArray* objects = [NSMutableArray array];
     va_list argumentList;
     va_start(argumentList, firstObject);
     for (id thisObject = firstObject; thisObject != nil; thisObject = va_arg(argumentList, id)) {
@@ -72,21 +106,25 @@ static NSMethodSignature* newSignatureForSignature(NSMethodSignature* sig) {
 - (NSMethodSignature*) methodSignatureForSelector:(SEL)sel {
     id firstObject = [_wrappedObjects objectAtIndex:0];
     NSMethodSignature* sig = [firstObject methodSignatureForSelector:sel];
-    return newSignatureForSignature(sig);
+    return makeSignatureForSignature(sig);
 }
 
 - (void) forwardInvocation:(NSInvocation*)invocation {
     if (shouldCollect([invocation methodSignature])) {
-        NSMutableArray* toWrap = [[NSMutableArray alloc] init];
+        NSMutableArray* toWrap = [NSMutableArray array];
         for (id obj in _wrappedObjects) {
             id returnObject;
             [invocation invokeWithTarget:obj];
             [invocation getReturnValue:&returnObject];
             [toWrap addObject:returnObject];
         }
+        BOOL isOwning = isSelectorOwning([invocation selector]);
         PXMultiForwarder* wrapper = [[PXMultiForwarder alloc] initWithArrayOfObjects:toWrap];
-        void* wrapperBuf = (void*)CFBridgingRetain(wrapper);
-        [invocation setReturnValue:&wrapperBuf];
+        if (!isOwning) {
+            [wrapper autorelease];
+        }
+
+        [invocation setReturnValue:&wrapper];
     } else {
         for (id obj in _wrappedObjects) {
             [invocation invokeWithTarget:obj];
@@ -103,7 +141,7 @@ static NSMethodSignature* newSignatureForSignature(NSMethodSignature* sig) {
 }
 
 - (PXMultiForwarder*) basicAccumulateWrapperForNSObjectSelector:(SEL)sel {
-    NSMutableArray* toWrap = [[NSMutableArray alloc] init];
+    NSMutableArray* toWrap = [NSMutableArray array];
     NSInvocation* invocation = [NSInvocation invocationWithMethodSignature:[NSObject methodSignatureForSelector:sel]];
     [invocation setSelector:sel];
     for (id obj in _wrappedObjects) {
@@ -112,7 +150,7 @@ static NSMethodSignature* newSignatureForSignature(NSMethodSignature* sig) {
         [invocation getReturnValue:&result];
         [toWrap addObject:result];
     }
-    return [[PXMultiForwarder alloc] initWithArrayOfObjects:toWrap];
+    return [[[PXMultiForwarder alloc] initWithArrayOfObjects:toWrap] autorelease];
 }
 
 @end

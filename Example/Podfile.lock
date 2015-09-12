@@ -1,5 +1,5 @@
 PODS:
-  - PXMultiForwarder (0.1.0)
+  - PXMultiForwarder (0.1.1)
 
 DEPENDENCIES:
   - PXMultiForwarder (from `../`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  PXMultiForwarder: b8949d3571cad253ca4f849cbb6f63ff61f3055d
+  PXMultiForwarder: afe50888818d8bddf8fa6dd86961b396bf450e05
 
 COCOAPODS: 0.38.2

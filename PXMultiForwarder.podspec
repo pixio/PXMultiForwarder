@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "PXMultiForwarder"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "An object wrapper that forwards messages to multiple objects."
   s.description      = <<-DESC
                        PXMultiForwarder lets you wrap multiple objects and send messages to all of them as if you were working with one.
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/pixio/PXMultiForwarder.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '7.0'
-  s.requires_arc = true
+  s.requires_arc = false
 
   s.source_files = 'Pod/Classes/PXMultiForwarder.{h,m}'
   s.public_header_files = 'Pod/Classes/PXMultiForwarder.h'
