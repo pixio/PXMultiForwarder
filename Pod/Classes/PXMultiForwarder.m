@@ -145,6 +145,14 @@ static NSMethodSignature* makeSignatureForSignature(NSMethodSignature* sig) {
     return (Class)[self basicAccumulateWrapperForNSObjectSelector:_cmd];
 }
 
+- (id) copy {
+    return [self basicAccumulateWrapperForNSObjectSelector:_cmd];
+}
+
+- (id) mutableCopy {
+    return [self basicAccumulateWrapperForNSObjectSelector:_cmd];
+}
+
 - (PXMultiForwarder*) basicAccumulateWrapperForNSObjectSelector:(SEL)sel {
     NSMutableArray* toWrap = [NSMutableArray array];
     NSInvocation* invocation = [NSInvocation invocationWithMethodSignature:[NSObject methodSignatureForSelector:sel]];
@@ -155,7 +163,11 @@ static NSMethodSignature* makeSignatureForSignature(NSMethodSignature* sig) {
         [invocation getReturnValue:&result];
         [toWrap addObject:result];
     }
-    return [[[PXMultiForwarder alloc] initWithArrayOfObjects:toWrap] autorelease];
+    PXMultiForwarder* forwarder = [[PXMultiForwarder alloc] initWithArrayOfObjects:toWrap];
+    if (!isSelectorOwning(sel)) {
+        [forwarder autorelease];
+    }
+    return forwarder;
 }
 
 @end

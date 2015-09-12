@@ -80,4 +80,10 @@
 /** Overridden to forward to the wrapped objects (returns an PXMultiForwarder*). */
 - (Class) superclass;
 
+/** Overridden to forward to the wrapped objects (returns an PXMultiForwarder*). */
+- (id) copy;
+
+/** Overridden to forward to the wrapped objects (returns an PXMultiForwarder*). */
+- (id) mutableCopy;
+
 @end
