@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "PXMultiForwarder"
-  s.version          = "0.2.0"
+  s.version          = "0.3.0"
   s.summary          = "An object wrapper that forwards messages to multiple objects."
   s.description      = <<-DESC
                        PXMultiForwarder lets you wrap multiple objects and send messages to all of them as if you were working with one.

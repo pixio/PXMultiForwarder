@@ -64,6 +64,9 @@
  * (e.g. dealloc, description, finalize, any method in the NSObject protocol) is called directly on the
  * PXMultiForwarder and handled in the typical fashion. However, some of these methods (see the bottom of this file)
  * are overridden to forward instead of being handled normally.
+ *
+ * In addition, this object IS NOT BUILT to forward alloc/init type methods, and asserts that any method being forwarded is not an alloc/init method.
+ * Other "owning return" methods such as "copy" and "new" are fine, but alloc/init methods are not.
  */
 @interface PXMultiForwarder : NSProxy
 

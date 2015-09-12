@@ -8,11 +8,8 @@
 
 #import "PXMultiForwarder.h"
 
-static BOOL isSelectorOwning(SEL sel) {
-    // http://clang.llvm.org/docs/AutomaticReferenceCounting.html#method-families
-    static const char* strings[5] = {"alloc", "copy", "mutableCopy", "new", "init"};
-    static int lengths[5] = {5, 4, 11, 3, 4};
-
+// http://clang.llvm.org/docs/AutomaticReferenceCounting.html#method-families
+static BOOL isSelectorInList(SEL sel, const char* strings[], const int lengths[], int listLength) {
     NSString* name = NSStringFromSelector(sel);
     NSUInteger cLength = [name lengthOfBytesUsingEncoding:NSUTF8StringEncoding];
     const char* cName = [name UTF8String];
@@ -23,7 +20,7 @@ static BOOL isSelectorOwning(SEL sel) {
         cLength--;
     }
     
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < listLength; i++) {
         if (cLength < lengths[i])
             continue;
         
@@ -42,6 +39,17 @@ static BOOL isSelectorOwning(SEL sel) {
     
     return FALSE;
 }
+static BOOL isValidSelector(SEL sel) {
+    static const char* strings[2] = {"alloc", "init"};
+    static int lengths[2] = {5, 4};
+    return !isSelectorInList(sel, strings, lengths, 2);
+}
+static BOOL isSelectorOwning(SEL sel) {
+    static const char* strings[3] = {"copy", "mutableCopy", "new"};
+    static int lengths[3] = {4, 11, 3};
+    return isSelectorInList(sel, strings, lengths, 3);
+}
+
 static BOOL shouldCollect(NSMethodSignature* sig) {
     const char* const objEncoding = @encode(NSObject*);
     const char* const classEncoding = @encode(typeof([NSObject class]));
@@ -98,14 +106,13 @@ static NSMethodSignature* makeSignatureForSignature(NSMethodSignature* sig) {
 - (instancetype) initWithArrayOfObjects:(NSArray*)objects {
     if ([objects count] == 0)
         return nil;
-    
     _wrappedObjects = [objects copy];
     return self;
 }
 
 - (void) dealloc {
-    [super dealloc];
     [_wrappedObjects release];
+    [super dealloc];
 }
 
 - (NSMethodSignature*) methodSignatureForSelector:(SEL)sel {
@@ -115,20 +122,13 @@ static NSMethodSignature* makeSignatureForSignature(NSMethodSignature* sig) {
 }
 
 - (void) forwardInvocation:(NSInvocation*)invocation {
+    if (!isValidSelector([invocation selector])) {
+        NSLog(@"[ERROR]: PXMultiForwarder asked to forward invalid selector: %@", NSStringFromSelector([invocation selector]));
+        NSException* exception = [NSException exceptionWithName:NSInternalInconsistencyException reason:[@"Unforwardable selector sent to PXMultiForwarder: " stringByAppendingString:NSStringFromSelector([invocation selector])] userInfo:nil];
+        [exception raise];
+    }
     if (shouldCollect([invocation methodSignature])) {
-        NSMutableArray* toWrap = [NSMutableArray array];
-        for (id obj in _wrappedObjects) {
-            id returnObject;
-            [invocation invokeWithTarget:obj];
-            [invocation getReturnValue:&returnObject];
-            [toWrap addObject:returnObject];
-        }
-        BOOL isOwning = isSelectorOwning([invocation selector]);
-        PXMultiForwarder* wrapper = [[PXMultiForwarder alloc] initWithArrayOfObjects:toWrap];
-        if (!isOwning) {
-            [wrapper autorelease];
-        }
-
+        PXMultiForwarder* wrapper = [self makeAnotherWrapperWithInvocation:invocation];
         [invocation setReturnValue:&wrapper];
     } else {
         for (id obj in _wrappedObjects) {
@@ -154,20 +154,28 @@ static NSMethodSignature* makeSignatureForSignature(NSMethodSignature* sig) {
 }
 
 - (PXMultiForwarder*) basicAccumulateWrapperForNSObjectSelector:(SEL)sel {
-    NSMutableArray* toWrap = [NSMutableArray array];
     NSInvocation* invocation = [NSInvocation invocationWithMethodSignature:[NSObject methodSignatureForSelector:sel]];
     [invocation setSelector:sel];
+    return [self makeAnotherWrapperWithInvocation:invocation];
+}
+
+- (PXMultiForwarder*) makeAnotherWrapperWithInvocation:(NSInvocation*)invocation {
+    NSAssert(isValidSelector([invocation selector]), @"Invalid selector for forwarding with PXMultiForwarder");
+    BOOL owning = isSelectorOwning([invocation selector]);
+    NSMutableArray* toWrap = [NSMutableArray array];
     for (id obj in _wrappedObjects) {
-        id result;
+        id returnObject;
         [invocation invokeWithTarget:obj];
-        [invocation getReturnValue:&result];
-        [toWrap addObject:result];
+        [invocation getReturnValue:&returnObject];
+        [toWrap addObject:returnObject];
+        if (owning)
+            [returnObject release];
     }
-    PXMultiForwarder* forwarder = [[PXMultiForwarder alloc] initWithArrayOfObjects:toWrap];
-    if (!isSelectorOwning(sel)) {
-        [forwarder autorelease];
-    }
-    return forwarder;
+    PXMultiForwarder* wrapper = [[PXMultiForwarder alloc] initWithArrayOfObjects:toWrap];
+    if (!owning)
+        [wrapper autorelease];
+
+    return wrapper;
 }
 
 @end
