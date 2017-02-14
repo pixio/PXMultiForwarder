@@ -70,23 +70,23 @@
  */
 @interface PXMultiForwarder : NSProxy
 
-- (instancetype) initWithObjects:(id)firstObject, ... NS_REQUIRES_NIL_TERMINATION;
-- (instancetype) initWithArrayOfObjects:(NSArray*)objects;
+- (nullable instancetype) initWithObjects:(nullable id)firstObject, ... NS_REQUIRES_NIL_TERMINATION;
+- (nullable instancetype) initWithArrayOfObjects:(nullable NSArray*)objects;
 
 /** Returns the objects wrapped by this forwarder. */
-@property (readonly) NSArray* wrappedObjects;
+@property (readonly, nullable) NSArray* wrappedObjects;
 
 #pragma mark NSProxy methods overridden to forward
 /** Overridden to forward to the wrapped objects (returns an PXMultiForwarder*). */
-- (Class) class;
+- (nullable Class) class;
 
 /** Overridden to forward to the wrapped objects (returns an PXMultiForwarder*). */
-- (Class) superclass;
+- (nullable Class) superclass;
 
 /** Overridden to forward to the wrapped objects (returns an PXMultiForwarder*). */
-- (id) copy;
+- (nullable id) copy;
 
 /** Overridden to forward to the wrapped objects (returns an PXMultiForwarder*). */
-- (id) mutableCopy;
+- (nullable id) mutableCopy;
 
 @end
