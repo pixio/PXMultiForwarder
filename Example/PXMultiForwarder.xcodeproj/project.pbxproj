@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		281DE74A1BA0D205008E4103 /* PXTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 281DE7491BA0D205008E4103 /* PXTopView.m */; };
 		281DE74D1BA0D97A008E4103 /* PXSmallView.m in Sources */ = {isa = PBXBuildFile; fileRef = 281DE74C1BA0D97A008E4103 /* PXSmallView.m */; };
+		4B53E16C1E53A90F00DAB293 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B53E16B1E53A90F00DAB293 /* main.storyboard */; };
+		5DC7C92C688C50656A907EED /* Pods_PXMultiForwarder_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96069C1AFDF11E08CFEC5C84 /* Pods_PXMultiForwarder_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -22,8 +24,7 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		88397A0DFFC346244404E66E /* Pods_PXMultiForwarder_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7C17DAB1BA25193D046725 /* Pods_PXMultiForwarder_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		DF0700715E349150AD242775 /* Pods_PXMultiForwarder_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99D0F2196766926495DA08CB /* Pods_PXMultiForwarder_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A8EF865CFDC6BC373D9C2A0F /* Pods_PXMultiForwarder_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82C3532B14C359D39E7E19D4 /* Pods_PXMultiForwarder_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,12 +38,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B6306D691513AF3C71BA532 /* Pods-PXMultiForwarder_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PXMultiForwarder_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PXMultiForwarder_Example/Pods-PXMultiForwarder_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		0C7272DA22D3948615BA0D78 /* Pods-PXMultiForwarder_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PXMultiForwarder_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-PXMultiForwarder_Example/Pods-PXMultiForwarder_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1A6A565A24357F3E8DBA5230 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		20B40D22339D96F229D9E431 /* Pods-PXMultiForwarder_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PXMultiForwarder_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PXMultiForwarder_Tests/Pods-PXMultiForwarder_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		281DE7481BA0D205008E4103 /* PXTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXTopView.h; sourceTree = "<group>"; };
 		281DE7491BA0D205008E4103 /* PXTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXTopView.m; sourceTree = "<group>"; };
 		281DE74B1BA0D97A008E4103 /* PXSmallView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXSmallView.h; sourceTree = "<group>"; };
 		281DE74C1BA0D97A008E4103 /* PXSmallView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXSmallView.m; sourceTree = "<group>"; };
-		4DB8E944EC017DDBC424C52E /* Pods-PXMultiForwarder_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PXMultiForwarder_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-PXMultiForwarder_Example/Pods-PXMultiForwarder_Example.release.xcconfig"; sourceTree = "<group>"; };
+		444C701FBAA0FA96A3D6210F /* Pods-PXMultiForwarder_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PXMultiForwarder_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PXMultiForwarder_Tests/Pods-PXMultiForwarder_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		4B53E16B1E53A90F00DAB293 /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* PXMultiForwarder_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PXMultiForwarder_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,11 +67,8 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		63BA2EA6DDA9E27A3C0D2C02 /* Pods-PXMultiForwarder_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PXMultiForwarder_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PXMultiForwarder_Tests/Pods-PXMultiForwarder_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		99D0F2196766926495DA08CB /* Pods_PXMultiForwarder_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PXMultiForwarder_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BAE31FD49BB7DCB6046D606E /* Pods-PXMultiForwarder_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PXMultiForwarder_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PXMultiForwarder_Example/Pods-PXMultiForwarder_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		CC7C17DAB1BA25193D046725 /* Pods_PXMultiForwarder_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PXMultiForwarder_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E326B12503FD840045F2189A /* Pods-PXMultiForwarder_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PXMultiForwarder_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PXMultiForwarder_Tests/Pods-PXMultiForwarder_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		82C3532B14C359D39E7E19D4 /* Pods_PXMultiForwarder_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PXMultiForwarder_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96069C1AFDF11E08CFEC5C84 /* Pods_PXMultiForwarder_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PXMultiForwarder_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4CAFC346BEDA5A6BD20D3B7 /* PXMultiForwarder.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PXMultiForwarder.podspec; path = ../PXMultiForwarder.podspec; sourceTree = "<group>"; };
 		EAC9646B5CFDB9D47C0C27F3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,7 +81,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				88397A0DFFC346244404E66E /* Pods_PXMultiForwarder_Example.framework in Frameworks */,
+				5DC7C92C688C50656A907EED /* Pods_PXMultiForwarder_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +92,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				DF0700715E349150AD242775 /* Pods_PXMultiForwarder_Tests.framework in Frameworks */,
+				A8EF865CFDC6BC373D9C2A0F /* Pods_PXMultiForwarder_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +107,7 @@
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
-				A99903DD3E9CBC60647D56D4 /* Pods */,
+				9A6581F751783F6AB17C855A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,8 +127,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				CC7C17DAB1BA25193D046725 /* Pods_PXMultiForwarder_Example.framework */,
-				99D0F2196766926495DA08CB /* Pods_PXMultiForwarder_Tests.framework */,
+				96069C1AFDF11E08CFEC5C84 /* Pods_PXMultiForwarder_Example.framework */,
+				82C3532B14C359D39E7E19D4 /* Pods_PXMultiForwarder_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -153,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				6003F595195388D20070C39A /* PXMultiForwarder-Info.plist */,
+				4B53E16B1E53A90F00DAB293 /* main.storyboard */,
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
 				6003F59B195388D20070C39A /* PXMultiForwarder-Prefix.pch */,
@@ -189,13 +192,13 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		A99903DD3E9CBC60647D56D4 /* Pods */ = {
+		9A6581F751783F6AB17C855A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BAE31FD49BB7DCB6046D606E /* Pods-PXMultiForwarder_Example.debug.xcconfig */,
-				4DB8E944EC017DDBC424C52E /* Pods-PXMultiForwarder_Example.release.xcconfig */,
-				63BA2EA6DDA9E27A3C0D2C02 /* Pods-PXMultiForwarder_Tests.debug.xcconfig */,
-				E326B12503FD840045F2189A /* Pods-PXMultiForwarder_Tests.release.xcconfig */,
+				0B6306D691513AF3C71BA532 /* Pods-PXMultiForwarder_Example.debug.xcconfig */,
+				0C7272DA22D3948615BA0D78 /* Pods-PXMultiForwarder_Example.release.xcconfig */,
+				20B40D22339D96F229D9E431 /* Pods-PXMultiForwarder_Tests.debug.xcconfig */,
+				444C701FBAA0FA96A3D6210F /* Pods-PXMultiForwarder_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -207,12 +210,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "PXMultiForwarder_Example" */;
 			buildPhases = (
-				F687941649446E1284A9414C /* Check Pods Manifest.lock */,
+				6618733C24FE898680E6DB1F /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				14BE15F4A22FACD904598A42 /* Embed Pods Frameworks */,
-				86CE892E046FB17FA7AD848C /* Copy Pods Resources */,
+				A3A430662D4777A55B97359E /* [CP] Embed Pods Frameworks */,
+				50ADD2455AE81544DE3ED4AE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -227,12 +230,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "PXMultiForwarder_Tests" */;
 			buildPhases = (
-				E7F1F70AD35D4A411E0FEDAD /* Check Pods Manifest.lock */,
+				598D6CC3ECE40D13C5ED38DA /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				53DD1205B7F438AA6990AE0D /* Embed Pods Frameworks */,
-				46FDF06851314FD6BC11E0A0 /* Copy Pods Resources */,
+				6EBF6AAFD5B830A58ABF0D88 /* [CP] Embed Pods Frameworks */,
+				9A02B5F6A86C437E786CC2A6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,7 +254,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = PX;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Spencer Phippen";
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
@@ -284,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				4B53E16C1E53A90F00DAB293 /* main.storyboard in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,59 +303,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		14BE15F4A22FACD904598A42 /* Embed Pods Frameworks */ = {
+		50ADD2455AE81544DE3ED4AE /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PXMultiForwarder_Example/Pods-PXMultiForwarder_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		46FDF06851314FD6BC11E0A0 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PXMultiForwarder_Tests/Pods-PXMultiForwarder_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		53DD1205B7F438AA6990AE0D /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PXMultiForwarder_Tests/Pods-PXMultiForwarder_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		86CE892E046FB17FA7AD848C /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,34 +318,79 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PXMultiForwarder_Example/Pods-PXMultiForwarder_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E7F1F70AD35D4A411E0FEDAD /* Check Pods Manifest.lock */ = {
+		598D6CC3ECE40D13C5ED38DA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		F687941649446E1284A9414C /* Check Pods Manifest.lock */ = {
+		6618733C24FE898680E6DB1F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6EBF6AAFD5B830A58ABF0D88 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PXMultiForwarder_Tests/Pods-PXMultiForwarder_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A02B5F6A86C437E786CC2A6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PXMultiForwarder_Tests/Pods-PXMultiForwarder_Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3A430662D4777A55B97359E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PXMultiForwarder_Example/Pods-PXMultiForwarder_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -455,13 +459,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -474,7 +484,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -494,20 +504,25 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -516,7 +531,7 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BAE31FD49BB7DCB6046D606E /* Pods-PXMultiForwarder_Example.debug.xcconfig */;
+			baseConfigurationReference = 0B6306D691513AF3C71BA532 /* Pods-PXMultiForwarder_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -524,6 +539,7 @@
 				GCC_PREFIX_HEADER = "PXMultiForwarder/PXMultiForwarder-Prefix.pch";
 				INFOPLIST_FILE = "PXMultiForwarder/PXMultiForwarder-Info.plist";
 				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -531,7 +547,7 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4DB8E944EC017DDBC424C52E /* Pods-PXMultiForwarder_Example.release.xcconfig */;
+			baseConfigurationReference = 0C7272DA22D3948615BA0D78 /* Pods-PXMultiForwarder_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -539,6 +555,7 @@
 				GCC_PREFIX_HEADER = "PXMultiForwarder/PXMultiForwarder-Prefix.pch";
 				INFOPLIST_FILE = "PXMultiForwarder/PXMultiForwarder-Info.plist";
 				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -546,7 +563,7 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 63BA2EA6DDA9E27A3C0D2C02 /* Pods-PXMultiForwarder_Tests.debug.xcconfig */;
+			baseConfigurationReference = 20B40D22339D96F229D9E431 /* Pods-PXMultiForwarder_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -561,6 +578,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PXMultiForwarder_Example.app/PXMultiForwarder_Example";
 				WRAPPER_EXTENSION = xctest;
@@ -569,7 +587,7 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E326B12503FD840045F2189A /* Pods-PXMultiForwarder_Tests.release.xcconfig */;
+			baseConfigurationReference = 444C701FBAA0FA96A3D6210F /* Pods-PXMultiForwarder_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -580,6 +598,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PXMultiForwarder_Example.app/PXMultiForwarder_Example";
 				WRAPPER_EXTENSION = xctest;
